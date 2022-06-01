@@ -1,0 +1,103 @@
+/* exemplo 1 */
+.flex-container, .flex-container-2, .flex-container-3{
+    display: flex;
+    height: 500px;
+    border: 1px solid red;
+}
+
+.box, .box-2, /* exemplo 1 a 7 */
+.box1, .box2, .box3, .box4{ /* exemplo 8 a  */
+    display: flex;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(62, 62, 179);
+    border: 1px solid green;
+}
+
+/* OS ITENS ESTÃO LISTADOS SEPARADAMENTE ABAIXO
+COMENTE E DESCOMENTE CADA ITEM NO HTML E CSS*/
+/* ------------------------------------------------ */
+
+/* EXEMPLO 1 */
+/* .flex-container{align-items: flex-end;flex-direction: column;}
+.box{margin-bottom: 10px;} */
+
+/* EXEMPLO 2 */
+/* .box{margin-right: 10px;} */
+
+/* EXEMPLO 3 */
+/* .flex-container{flex-direction: row-reverse;}
+.box{margin-left: 10px;} */
+
+/* EXEMPLO 4 */
+/* .flex-container{flex-wrap: wrap;}
+.box{margin: 10px;} */
+
+/* EXEMPLO 5 */
+/* .flex-container{flex-direction: row-reverse; flex-wrap: wrap;}
+.box{margin: 10px;} */
+
+/* EXEMPLO 6 */
+/* .flex-container{justify-content: space-around; flex-wrap: wrap;}
+.flex-container-2{justify-content: space-between; flex-wrap: wrap;}
+.box{margin: 10px;}
+.box-2{margin: 0;} */
+
+/* EXEMPLO 7 */
+/* .flex-container{justify-content: center;align-items: center;}
+.box{margin: 10px;} */
+
+/* EXEMPLO 8 */
+/* .flex-container-3{justify-content: center;align-items: baseline;}
+.box1, .box2, .box3{margin: 10px;}
+.box2{height: 50px;}
+.box3{height: 150px;} */
+
+/* EXEMPLO 9 */
+/* .flex-container{justify-content: center;align-items: center;}
+.box{height: 490px; margin: 5px;} */
+
+/* EXEMPLO 10 */
+/* .flex-container-3{justify-content: center;align-items: center;}
+.box1, .box2, .box3, .box4{margin: 10px;}
+.box1:nth-child(1){order: 2;} 
+.box2:nth-child(2){order: 1; background-color: brown;} 
+.box3:nth-child(3){order: 3;} 
+.box4:nth-child(4){order: 4;}  */
+
+/* EXEMPLO 11 */
+/* .flex-container-3{justify-content: center;align-items: center;}
+.box1, .box2, .box3, .box4{margin: 10px;}
+.box1:nth-child(1){order: 2;} 
+.box2:nth-child(2){order: 3; background-color: brown;} 
+.box3:nth-child(3){order: 1;} 
+.box4:nth-child(4){order: 4;}  */
+
+/* EXEMPLO 12 */
+/* .flex-container-3{justify-content: center; align-items: center;}
+.box1, .box2, .box3, .box4{width: 150px; height: 100px; margin: 10px;}
+.box2:nth-child(2){align-self: flex-start;background-color: brown;}  */
+
+/* EXEMPLO 13 */
+/* .flex-container-3{justify-content: center; align-items: center;}
+.box1, .box2, .box3, .box4{width: 150px; height: 100px; margin: 10px;}
+.box2:nth-child(2){align-self: flex-end;background-color: brown;}  */
+
+/* EXEMPLO 14 ------- ESSE ITEM NÃO CONSEGUI FAZER :/*/
+/* .flex-container-3{align-items: center;}
+.box1, .box2, .box3, .box4{margin: 10px;}
+.box2:nth-child(2){ flex-grow: 1 1 auto; background-color: brown;}  */
+
+/* EXEMPLO 15 */
+/* .flex-container-3{align-items: center;}
+.box1, .box2, .box3, .box4{margin: 10px;}
+.box2:nth-child(2){flex: 1 1 auto; background-color: brown;}  */
+
+/* EXEMPLO 16 */
+/* .flex-container-3{align-items: center;}
+.box1, .box2, .box3, .box4{flex: 3 ; margin: 10px;}
+.box2:nth-child(2){ flex: 1 1 auto;background-color: brown;}  */
