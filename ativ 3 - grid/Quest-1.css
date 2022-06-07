@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    gap: 5px;
+    height: 100vh;
+    background-color: black;
+}
+
+.A, .B, .C, .D, .E, .F, .G, .H{color: black; background-color: lightgray; border: 1px solid red;}
+
+.A{grid-area: A;}
+.B{grid-area: B;}
+.C{grid-area: C;}
+.D{grid-area: D;}
+.E{grid-area: E;}
+.F{grid-area: F;}
+.G{grid-area: G;}
+.H{grid-area: H;}
+
+.C{background-color: white;}
+.F, .H{color: white; background-color: blue;}
+
+/* QUESTÃO A */
+.container{
+    grid-template-areas:
+    'H C A B'
+    'D E G F';
+}
+
+/* QUESTÃO B */
+/* .container{
+    grid-template-areas:
+    'H C C A'
+    'F C C A'
+    'F B D E';
+} */
+
+/* QUESTÃO C */
+/* .container{
+    grid-template-areas:
+    'H C C A'
+    'B C C A'
+    'B D E F';
+} */
+
+/* QUESTÃO D */
+/* .container{
+    grid-template-areas:
+    'H H H H'
+    'H H H H'
+    'B C C A'
+    'B C C A'
+    'B C C A'
+    'B C C A'
+    'B F F F';
+} */
+
+/* QUESTÃO E */
+/* .container{
+    grid-template-areas:
+    'H H H H'
+    'C C A F'
+    'B D D F';   
+} */
+
+/* QUESTÃO G */
+/* .container{
+    grid-template-areas:
+    'C C C C'
+    'C C C C'
+    'H A B D'
+    'H E G F';
+} */
+
+
+
+/* QUESTÃO H */
+/* QUESTÃO I */
+/* QUESTÃO J */
+
+
+
+/* QUESTÃO L e M */
+/* .container{
+    grid-template-areas:
+    'H C C C A A A'
+    'H C C C B B B'
+    'H C C C D D D'
+    'H C C C E E E';
+} */
+
+/* QUESTÃO N */
+/* .container{
+    grid-template-areas:
+    'H A A C C C C'
+    'H A A C C C C'
+    'H A A C C C C'
+    'H B B C C C C'
+    'H B B C C C C'
+    'H B B C C C C';
+}
+.C{background-color: lightgray;}
+.A, .B{background-color: white;} */
