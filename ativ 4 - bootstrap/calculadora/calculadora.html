@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculadora.css">
+        <script src="calculadora.js"></script>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <main class="mainCalculadora">
+            <h1>Calculadora</h1>
+            
+            <section class="containerCalculadora">
+                <div class="linha1">
+                    <p id="EntradaResultado" name="EntradaResultado".\></p>
+                </div>
+    
+                <div class="linha2">
+                    <button class="botao" onclick="entrada('7')">7</button>
+                    <button class="botao" onclick="entrada('8')">8</button>
+                    <button class="botao" onclick="entrada('9')">9</button>
+                    <button class="botao" onclick="entrada('/')">/</button>
+                </div>
+        
+                <div class="linha3">
+                    <button class="botao" onclick="entrada('4')">4</button>
+                    <button class="botao" onclick="entrada('5')">5</button>
+                    <button class="botao" onclick="entrada('6')">6</button>
+                    <button class="botao" onclick="entrada('*')">*</button>
+                </div>
+        
+                <div class="linha4">
+                    <button class="botao" onclick="entrada('1')">1</button>
+                    <button class="botao" onclick="entrada('2')">2</button>
+                    <button class="botao" onclick="entrada('3')">3</button>
+                    <button class="botao" onclick="entrada('-')">-</button>
+                </div>
+        
+                <div class="linha5">
+                    <button class="botao" onclick="entrada('0')">0</button>
+                    <button class="botao" onclick="calcular('=')">=</button>
+                    <button class="botao" onclick="limpar()">C</button>
+                    <button class="botao" onclick="entrada('+')">+</button>
+                </div>
+            </section>   
+        </main>
+    </body>
+</html>
