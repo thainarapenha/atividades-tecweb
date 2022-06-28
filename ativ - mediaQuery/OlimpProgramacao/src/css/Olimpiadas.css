@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+}
+.mainHome, .noticias, .vencedoresAnterior, .vencedor, .areaCard, .card, .cardNivel, .noticias, .agenda, .incricoes, .titulo{
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainHome h1{
+    font-size: 2.1em;
+    color: #29a329;
+}
+.cabecalho{
+    background: #29a329;
+    /* border-bottom: solid 5px #4faddb; */
+    height: 80px;
+    box-sizing: content-box;
+}
+.cabecalho a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3em;
+}
+.logo{
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+.logo img{
+    height: 100%;
+}
+.menu-toggle{
+    float: right;
+    color: #eee;
+    background-color: #555;
+    border: solid 1px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+.menu{
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    padding: 15px;
+}
+.menu a:hover, .menu a.selected{
+    background-color: #4faddb;
+    color: #000;
+}
+.autenticacao{
+    float: right;
+    height: 80px;
+    padding: 25px;
+}
+.botao{
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10px;
+}
+.destaque {
+    background: #006600;
+    color: #fff;
+}
+.noticias, .vencedoresAnterior, .agenda, .incricoes, .titulo{
+    align-items: center;
+}
+.vencedoresAnterior{
+    background: #c1f0c1;
+}
+.vencedoresAnterior h1{
+    color: black;
+}
+.vencedor{
+    padding: 0 20px;
+    /* border: 1px solid black; */   
+}
+.vencedor img{
+    width: 100%;
+    max-width: 50px;
+}
+.incricoes{
+    background: #29a329;
+}
+.incricoes h1{
+    color: white;
+}
+.titulo p{
+    font-size: 1.6rem;
+}
+.noticias p{
+    font-size: 16px;
+}
+.agenda p, .incricoes p{
+    font-size: 20px;
+}
+.incricoes p{
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.vencedor, .areaCard, .card{
+    flex-direction: row;
+}
+.card, .cardNivel{
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid green;  */
+}
+.cardNivel{
+    width: 20%;
+}
+.card img, .cardNivel img{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+.cardNivel img{
+    max-width: 200px;
+
+}
+.ntc{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    /* border: 1px solid green;     */
+}
+.ntc figure img{
+    padding-right: 10px;
+    width: 100%;
+    max-width: 500px;
+    /* border: 1px solid green;    */
+}
+
+@media(min-width: 679px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+@media(max-width: 680px) {
+    .menu {
+        display: none;
+    }
+}
+@media(max-width: 910px) {
+    .autenticacao {
+        display: none;
+    }
+}
+
