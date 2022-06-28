@@ -6,13 +6,17 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: white;
 }
-.mainHome, .noticias, .vencedoresAnterior, .vencedor, .areaCard, .card, .cardNivel, .noticias, .agenda, .incricoes, .titulo{
+#mainHome, .noticias,
+.vencedoresAnterior, .agenda,
+.incricoes, .vencedor, .areaCard,
+.card, .cardNivel, .titulo,
+.mainLogin, .section-login, .btns{
     display: flex;
     padding: 50px 0;
     flex-direction: column;
     justify-content: center;
 }
-.mainHome h1{
+#mainHome h1{
     font-size: 2.1em;
     color: #29a329;
 }
@@ -79,7 +83,9 @@ body {
     background: #006600;
     color: #fff;
 }
-.noticias, .vencedoresAnterior, .agenda, .incricoes, .titulo{
+.section-login, 
+.noticias, .vencedoresAnterior, 
+.agenda, .incricoes, .titulo{
     align-items: center;
 }
 .vencedoresAnterior{
@@ -165,3 +171,75 @@ body {
     }
 }
 
+/* #mainLogin, .section-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid green;   
+
+} */
+/* .section-login{
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+     
+} */
+/* #btnLogin-menu {
+    width: 150px;
+    background: #591dcc;
+    
+    border: 1px solid green;    
+} */
+.section-login{
+    height: 500px;
+    /* border: 1px solid green;  */
+}
+.form-login{
+    width: 430px;
+    position: absolute;
+    /* border: 1px solid green;     */
+}
+.form-group input{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+.form-login label{
+    font-size: 36px;
+}
+.btns{
+    padding: 5px 0;
+}
+.btns button{
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    border: none;
+    height: 30px;
+}
+.btns p, .btns #EsqueciSenha{
+    color: black;
+    text-align: center;
+    margin: 3% 0;
+}
+.btns #btnEntrar, .btns #btnFacebook, 
+.btns #btnGoogle, .btns #EsqueciSenha{
+    width: 100%;
+    color: white;
+}
+.btns #btnEntrar{
+    background: #29a329;
+}
+.btns #btnFacebook{
+    background: #0d6efd;
+}
+.btns #btnGoogle{
+    background: #dc3545;
+}
+.btns #EsqueciSenha{
+    border: 1px solid black;
+    color: black;
+    background: white;
+}

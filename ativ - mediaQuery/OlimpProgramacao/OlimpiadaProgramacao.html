@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="src/css/Olimpiadas.css">
+        <script defer type="text/javascript" src="src/js/olim.js"></script>
         <title>Desafio Menu</title>
     </head>
 
@@ -19,19 +20,16 @@
             </button>
             <nav class="menu">
                 <ul>
-                    <li>
-                        <a href="#inicio">Início</a>
-                    </li>
-                
+                    <li><a id="btnInicio" href="#">Início</a></li>
                 </ul>
             </nav>
             <aside class="autenticacao">
-                <a href="#login">Login</a>
-                <a href="#registar" class="botao destaque">Registrar</a>
+                <a id="btnLogin" href="#">Login</a>
+                <a id="btnRegistrar" href="#" class="botao destaque">Registrar</a>
             </aside>
         </header>
 
-        <main class="mainHome">
+        <main id="mainHome">
             <div class="titulo">
                 <p>XXIV OLIMPÍADA BRASILEIRA DE INFORMÁTICA</p>
                 <p>Do quarto ano do Ensino Fundamental até o primeiro ano do Ensino Superior, todos podem participar.</p>
@@ -168,5 +166,30 @@
             </section>
         </main>
         
+        <main class="mainLogin" id="Login" style="display:none;">
+            <section class="section-login">
+
+                <form class="form-login">
+                    <div class="form-group">
+                        <label>Login</label>
+                        <input type="email" placeholder="Digite seu E-mail">
+                        <input type="password" placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="btns">
+                        <button type="submit" id="btnEntrar">Continuar</button>
+
+                        <p id="texo-entreBTN">Ou entre com sua rede social</p>
+
+                        <button type="submit" id="btnFacebook">Entrar com Facebook</button>
+                        <button type="submit" id="btnGoogle">Entrar com Google</button>
+
+                        <a href="#" id="EsqueciSenha" >Esqueci minha senha</a></a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </body>
 </html>
