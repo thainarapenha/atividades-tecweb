@@ -10,7 +10,8 @@ body {
 .vencedoresAnterior, .agenda,
 .incricoes, .vencedor, .areaCard,
 .card, .cardNivel, .titulo,
-.mainLogin, .section-login, .section-inscricao, .btns{
+.mainLogin, .section-login, .formulario, 
+.section-inscricao, .mainRegistro, .section-registro, .btns{
     display: flex;
     padding: 50px 0;
     flex-direction: column;
@@ -84,8 +85,9 @@ body {
     color: #fff;
 }
 .section-inscricao, .section-login, 
-.noticias, .vencedoresAnterior, 
-.agenda, .incricoes, .titulo{
+.section-registro, .noticias, 
+.vencedoresAnterior, .agenda, .incricoes, 
+.titulo, .formulario{
     align-items: center;
 }
 .vencedor, .areaCard, .card{
@@ -98,8 +100,7 @@ body {
     color: black;
 }
 .vencedor{
-    padding: 0 20px;
-    /* border: 1px solid black; */   
+    padding: 0 20px;  
 }
 .vencedor img{
     width: 100%;
@@ -108,7 +109,8 @@ body {
 .incricoes, .formulario{
     background: #29a329;
 }
-.incricoes h1{
+#mainHome .incricoes h1,
+#mainHome .formulario h1{
     color: white;
 }
 .agenda p, .incricoes p{
@@ -127,7 +129,6 @@ body {
     padding: 0 10px;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid green;  */
 }
 .cardNivel{
     width: 20%;
@@ -139,48 +140,26 @@ body {
 }
 .cardNivel img{
     max-width: 200px;
-
 }
 .ntc{
     display: flex;
     justify-content: flex-start;
     padding: 10px;
-    /* border: 1px solid green;     */
 }
 .ntc figure img{
     padding-right: 10px;
     width: 100%;
     max-width: 500px;
-    /* border: 1px solid green;    */
 }
-
-@media(min-width: 679px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-@media(max-width: 680px) {
-    .menu {
-        display: none;
-    }
-}
-@media(max-width: 910px) {
-    .autenticacao {
-        display: none;
-    }
-}
-
 .section-inscricao{
     height: 300px;
 }
-.section-login{
+.section-login, .section-registro{
     height: 500px;
-    /* border: 1px solid green;  */
 }
-.form-inscricao, .form-login{
+.form-inscricao, .form-login, .form-registro{
     width: 430px;
     position: absolute;
-    /* border: 1px solid green;     */
 }
 .form-inscricao input, .form-group input{
     width: 100%;
@@ -193,7 +172,8 @@ body {
 .btns{
     padding: 5px 0;
 }
-.btns button, .section-inscricao button{
+.btns button, .section-inscricao button,
+.section-registro button{
     cursor: pointer;
     width: 100%;
     color: white;
@@ -206,9 +186,8 @@ body {
     width: 100%;
     color: white;
 }
-#btnCadastrar{
+#btnCadastrar, #btnRegistrar{
     background: #006600;
-
 }
 .btns #btnEntrar{
     background: #29a329;
@@ -229,3 +208,20 @@ body {
     text-align: center;
     margin: 3% 0;
 }
+
+@media(min-width: 679px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+@media(max-width: 680px) {
+    .menu {
+        display: none;
+    }
+}
+@media(max-width: 910px) {
+    .autenticacao {
+        display: none;
+    }
+}
+
