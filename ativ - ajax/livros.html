@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="src/css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Livraria</h1>
+            <div class="loginCliente">
+                <img src="src/img/user.png" alt="icone com foto do cliente">
+                <label>Login cliente</label>
+            </div>
+        </header>
+
+        <main class="mainLivros">
+            <h2>Livros</h2>
+            <section class="areaLivros">
+                <button id="btnListar" onclick="getLivros()">Listar</button>
+                <button id="btnCadastrar" onclick="">Cadastrar</button>
+                <button id="btnDeletar" onclick="">Deletar</button>
+                <button id="btnAtualizar" onclick="">Atualizar</button>
+            </section>
+            <div id="abaListar" class="resultadoLivros"></div>
+        </main>
+
+        <main class="mainCadastrar" id="abaCadastro" style="display:none;">
+            <h3>Cadastre um livro</h3>
+
+            <form method="POST" class="formulario" id="formCadLivro">
+                <div>
+                    <strong><label>Título do livro:</label></strong>
+                    <input type="hidden" id="pendente" name="tituloLivro">
+                </div>
+                <div>
+                    <strong><label>Autor:</label></strong>
+                    <input name="autorLivro">
+                </div>
+                <div>
+                    <strong><label>Descrição:</label></strong>
+                    <textarea name="descLivro"></textarea>
+                </div>
+                <div>
+                    <strong><label>Tipo:</label></strong>
+                    <input name="tipoLivro">
+                </div>
+
+                <button type="submit" id="btnCadLivro">Cadastrar Livro</button>
+            </form>
+        </main>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="src/js/livros.js"></script>
+    </body>
+</html>

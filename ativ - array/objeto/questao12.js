@@ -31,7 +31,6 @@ let pessoas = [
         data_nascimento: {dia: 15, mes: 07, ano: 1993},
         favorito: true
     }
-    
 ]
 
 function imprimeDadosNome(nome){
