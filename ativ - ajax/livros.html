@@ -20,37 +20,31 @@
         <main class="mainLivros">
             <h2>Livros</h2>
             <section class="areaLivros">
-                <button id="btnListar" onclick="getLivros()">Listar</button>
-                <button id="btnCadastrar" onclick="">Cadastrar</button>
-                <button id="btnDeletar" onclick="">Deletar</button>
-                <button id="btnAtualizar" onclick="">Atualizar</button>
+                <button id="btnListar" onclick="listarLivros()">Listar</button>
+                <button id="btnCadastrar" onclick="cadastraLivro()">Cadastrar</button>
+                <button id="btnDeletar" onclick="deletaLivro()">Deletar</button>
+                <button id="btnAtualizar" onclick="atualizaLivro()">Atualizar</button>
             </section>
+
             <div id="abaListar" class="resultadoLivros"></div>
+            <div id="abaCadastrados" class="resultadoCadastros"></div>
+            <div id="abaDeletar" class="resultadoDeletar"></div>
+            <div id="abaAtualizado" class="resultadoAltualizado"></div>
         </main>
 
-        <main class="mainCadastrar" id="abaCadastro" style="display:none;">
-            <h3>Cadastre um livro</h3>
+        <main class="mainClientes">
+            <h2>Clientes</h2>
+            <section class="areaClientes">
+                <button id="btnListarCliente" onclick="listarClientes()">Listar Clientes</button>
+                <button id="btnCadastrarCliente" onclick="cadastraCliente()">Cadastrar Cliente</button>
+                <button id="btnDeletarCliente" onclick="deletaCliente()">Deletar Cliente</button>
+                <button id="btnAtualizarCliente" onclick="atualizaCliente()">Atualiza Cliente</button>
+            </section>
 
-            <form method="POST" class="formulario" id="formCadLivro">
-                <div>
-                    <strong><label>Título do livro:</label></strong>
-                    <input type="hidden" id="pendente" name="tituloLivro">
-                </div>
-                <div>
-                    <strong><label>Autor:</label></strong>
-                    <input name="autorLivro">
-                </div>
-                <div>
-                    <strong><label>Descrição:</label></strong>
-                    <textarea name="descLivro"></textarea>
-                </div>
-                <div>
-                    <strong><label>Tipo:</label></strong>
-                    <input name="tipoLivro">
-                </div>
-
-                <button type="submit" id="btnCadLivro">Cadastrar Livro</button>
-            </form>
+            <div id="abaListarCliente" class="clientes"></div>
+            <div id="abaCadastradarCliente" class="resultCadastros"></div>
+            <div id="abaDeletarCliente" class="resultDeletar"></div>
+            <div id="abaAtualizarCliente" class="resultAltualizado"></div>
         </main>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

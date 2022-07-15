@@ -16,19 +16,18 @@ header img{
     max-width: 50px;
     padding-right: 15px;
 }
-.mainLivros, .mainCadastrar{
+.mainLivros, .mainClientes{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 20px;
 }
-.areaLivros{
+.areaLivros, .areaClientes{
     display: flex;
     justify-content: center;
     padding: 10px;
-    /* border: 1px solid red; */
 }
-.areaLivros button, .formulario button{
+.areaLivros button, .areaClientes button{
     cursor: pointer;
     margin: 10px;
     padding: 20px 80px;
@@ -37,41 +36,7 @@ header img{
     border: 1px solid #009DAC;
     background: white;
 }
-.areaLivros button:hover{
+.areaLivros button:hover, .areaClientes button:hover{
     color: white;
     background: #009DAC;
 }
-.formulario button{
-    width: 100%;
-    height: 40px;
-    margin: 0;
-}
-.resultadoLivros{
-    width: 1000px;
-    padding-bottom: 30px;
-}
-.formulario{
-    width: 500px;
-}
-.formulario input, .formulario textarea{
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #009DAC;
-    background: white;
-}
-.formulario button{
-    margin-top: 10px;
-    padding: 0;
-    color: white;
-    background: #009DAC
-}
-/* .titulo::first-word{
-    font-weight:bold;
-    background: #009DAC;
-} */
-/* .id{
-    font: bold;
-    color: green;
-    background: #009DAC;
-} */
