@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, .cabecalho, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecalho, footer{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background: gray;
+}
+.menu, footer{
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    padding: 25px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+footer h5{
+    text-align: center;    
+}
+
+
+.containerPostagens{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+.containerItens{
+    display: grid;
+    width: 70%;
+    padding: 40px;
+
+}
+
+.A{grid-area: A;}
+.B{grid-area: B;}
+.C{grid-area: C;}
+
+.um{grid-area: um;}
+.dois{grid-area: dois;}
+.tres{grid-area: tres;}
+.quatro{grid-area: quatro;}
+.cinco{grid-area: cinco;}
+.seis{grid-area: seis;}
+
+.containerPostagens{
+    grid-template-areas:'A B C';
+}
+.containerPostagens img{
+    width: 60%;
+    grid-template-areas:'A B C';
+}
+.containerItens{
+    grid-template-areas:
+    'esquerdo direito';
+    align-items: center;
+}
+.esquerdo{
+    grid-template-areas:
+    'um dois'
+    'tres quatro'
+    'cinco seis';
+}
+.esquerdo img{
+    width: 20%;
+    grid-template-areas:'um dois tres quatro cinco seis';
+}
+.direito img{
+    width: 100%;
+    grid-template-areas:'um dois tres quatro cinco seis';
+}
+
+@media (max-width: 800px){
+    .containerPostagens{
+        display: flex;
+        flex-direction: column;
+    }
+}
